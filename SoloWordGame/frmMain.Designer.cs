@@ -37,6 +37,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtSeed = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumWords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,12 +104,12 @@
             this.txtResueltos.Multiline = true;
             this.txtResueltos.Name = "txtResueltos";
             this.txtResueltos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResueltos.Size = new System.Drawing.Size(340, 321);
+            this.txtResueltos.Size = new System.Drawing.Size(340, 264);
             this.txtResueltos.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(87, 429);
+            this.button1.Location = new System.Drawing.Point(87, 372);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 40);
             this.button1.TabIndex = 6;
@@ -131,11 +133,29 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Seed:";
             // 
+            // lblEstado
+            // 
+            this.lblEstado.Location = new System.Drawing.Point(12, 415);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(340, 27);
+            this.lblEstado.TabIndex = 9;
+            this.lblEstado.Text = "label5";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 445);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(340, 24);
+            this.progressBar1.TabIndex = 10;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 481);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSeed);
             this.Controls.Add(this.button1);
@@ -168,6 +188,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSeed;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
